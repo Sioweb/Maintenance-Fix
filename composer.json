@@ -3,7 +3,6 @@
     "type": "contao-bundle",
     "description": "MaintenanceFix for Contao 4+",
     "license": "MIT",
-    "version": "1.0.6",
     "authors": [
         {
             "name": "Sascha Weidner",
