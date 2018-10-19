@@ -1,0 +1,25 @@
+{
+    "name": "sioweb/maintenance-fix",
+    "type": "contao-bundle",
+    "description": "MaintenanceFix for Contao 4+",
+    "license": "MIT",
+    "version": "1.0.6",
+    "authors": [
+        {
+            "name": "Sascha Weidner",
+            "email": "support@sioweb.de"
+        }
+    ],
+    "require": {
+        "php": ">=7.1",
+        "contao/core-bundle": "^4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Sioweb\\MaintenanceFix\\": "src/"
+        }
+    },
+    "extra": {
+        "contao-manager-plugin": "Sioweb\\MaintenanceFix\\ContaoManager\\Plugin"
+    }
+}

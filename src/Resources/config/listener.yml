@@ -1,0 +1,8 @@
+services:
+    sioweb.maintenancefix.listener.initializeSystem:
+        class: Sioweb\MaintenanceFix\Listener\Setup
+        public: true
+        arguments:
+            - "@contao.framework"
+        tags:
+            - { name: contao.hook, hook: initializeSystem, method: initializeSystem, priority: -10 }
