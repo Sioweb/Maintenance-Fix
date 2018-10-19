@@ -4,6 +4,10 @@ Durch ein kleines Problem in Contao 4, kann die Systemwartung nicht mit weiteren
 
 Das genaue Problem kann hier eingesehen werden https://github.com/contao/contao/issues/89
 
+## Install
+
+Entweder im Contao-Manager nach `sioweb/maintenance-fix` suchen, oder über die Konsole `composer req sioweb/maintenance-fix`
+
 ## Wie functioniert das Tool?
 
 Das Modul fügt Inahlte an den Anfang der Systemwartung hinzu. 
