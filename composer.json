@@ -13,6 +13,9 @@
         "php": ">=7.1",
         "contao/core-bundle": "^4"
     },
+    "require-dev": {
+        "sioweb/apply_environment": "*"
+    },
     "autoload": {
         "psr-4": {
             "Sioweb\\MaintenanceFix\\": "src/"
@@ -20,5 +23,11 @@
     },
     "extra": {
         "contao-manager-plugin": "Sioweb\\MaintenanceFix\\ContaoManager\\Plugin"
+    },
+    "scripts": {
+        "package-scripts": [
+            "@config.localhost==1",
+            "Sioweb\\ApplyEnvironment\\Composer\\Git::init --repository=https://github.com/Sioweb/Maintenance-Fix.git"
+        ]
     }
 }
